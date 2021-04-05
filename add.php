@@ -42,7 +42,7 @@
             }
             
             $query = mysqli_query($con, $sql);
-            echo '<script>alert("SUCESSO!\nCadastrado com sucesso!");window.location.assign("cadastro.php");</script>';
+            echo '<script>alert("SUCESSO!\nCadastrado com sucesso!");window.location.assign("index.php");</script>';
         }
     }
 

@@ -30,7 +30,7 @@ $(document).ready(function(){
            success: function(response){
                 el.fadeOut(500, function() {
                     el.remove();
-                    window.location.assign("cadastro.php");
+                    window.location.assign("index.php");
                 });
            }
          });
