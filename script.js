@@ -32,10 +32,13 @@ $(document).ready(function(){
                     el.remove();
                     window.location.assign("index.php");
                 });
+           },
+           error: function(response){
+               alert('ERRO! \nNão foi possível excluir empresario!');
            }
+           
          });
       }
-   
     });
-   
-   });
+});
+

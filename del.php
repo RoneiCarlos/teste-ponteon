@@ -10,8 +10,15 @@
       
         if($totalrows > 0){
           $query = "DELETE FROM tb_empresarios WHERE id_empresario=".$id;
-          mysqli_query($con,$query);
-          echo "<script>alert('SUCESSO! \nEmpresario foi excluído com sucesso!');</script>";
+          if(mysqli_query($con,$query)) {
+            echo "<script>alert('SUCESSO! \nEmpresario foi excluído com sucesso!');</script>";
+            exit;
+          }else {
+            echo "<script>alert('ERRO! \nNão foi possível excluir empresario!');</script>";
+            exit;
+          }
+        } else {
+          echo "<script>alert('ERRO! \nNão foi possível excluir empresario!');</script>";
           exit;
         }
       }

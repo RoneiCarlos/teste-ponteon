@@ -5,7 +5,7 @@
     $nome = $_POST['nome_completo'];
     $celular = $_POST['celular'];
     $cidade = $_POST['cidade'];
-    $datetime = date('Y-m-d H:i');
+    $datetime = date('Y-m-d H:i:s');
     $pai_empresarial = $_POST['pai_empresarial'];
 
     
