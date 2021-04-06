@@ -4,9 +4,6 @@
 
 - Versão do MySQL no banco remoto:
         8.0.23
-- Arquivos de configuração do app heroku:
-		composer.json
-		Porcfile
 - Arquivo de script do banco de dados:
 		ponteon_mysql_create.sql
 
